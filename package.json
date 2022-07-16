@@ -1,0 +1,27 @@
+{
+  "name": "sabha",
+  "version": "1.0.0",
+  "description": "A audiance angegment platform for online meets",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srkds/sabha.git"
+  },
+  "author": "Nirav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srkds/sabha/issues"
+  },
+  "homepage": "https://github.com/srkds/sabha#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
