@@ -1,6 +1,5 @@
 # Sabha - A community angegment platform
 
----
 
 # API DOC
 
