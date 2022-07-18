@@ -46,7 +46,7 @@ speakerSchema
   });
 
 /* METHODS */
-speakerSchema.method = {
+speakerSchema.methods = {
   authenticate: function (plainpassword) {
     /**
      * Authenticate
