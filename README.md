@@ -5,7 +5,6 @@
 
 Common prefix: `/api/v1`
 
----
 
 ## Auth
 
