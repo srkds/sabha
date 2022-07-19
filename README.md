@@ -46,3 +46,15 @@ Common prefix: `/api/v1`
             }
         }
 </details>
+
+<details>
+    <summary>Signout</summary>
+	
+    Method: `GET`
+    Path: `/signout`
+    Body:
+    Response:
+        {
+            "message": "Successfuly Signout"
+        }
+</details>
