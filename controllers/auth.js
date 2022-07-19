@@ -2,7 +2,6 @@
 const Speaker = require("../models/speaker");
 
 const jwt = require("jsonwebtoken");
-const expressJWT = require("express-jwt");
 
 exports.signup = (req, res) => {
   const speaker = new Speaker(req.body);
@@ -52,4 +51,9 @@ exports.signin = (req, res) => {
       user: { _id, name, email },
     });
   });
+};
+
+exports.signout = (req, res) => {
+  res.clearCookie("token");
+  res.status(200).json({ message: "Successfuly Signout" });
 };
