@@ -1,10 +1,8 @@
 # Sabha - A community angegment platform
 
-
 # API DOC
 
 Common prefix: `/api/v1`
-
 
 ## Auth
 
@@ -25,5 +23,26 @@ Common prefix: `/api/v1`
             "name": "Nirav",
             "email": "nirav@nirav.com",
             "id": "UUID"
+        }
+</details>
+
+<details>
+    <summary>Signin</summary>
+	
+    Method: `POST`
+    Path: `/signin`
+    Body:
+        {
+            "email": "nirav@nirav.com",
+            "password": "password"
+        }
+    Response:
+        {
+            "token": "JWT TOKEN",
+            "user": {
+                "_id": "324300ebb75c297fb3682",
+                "name": "Nirav",
+                "email": "nirav@nirav.com"
+            }
         }
 </details>
