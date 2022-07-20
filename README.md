@@ -58,3 +58,19 @@ Common prefix: `/api/v1`
             "message": "Successfuly Signout"
         }
 </details>
+
+## Poll
+
+<details>
+    <summary>Create Poll</summary>
+	
+    Method: `POST`
+    Path: `/poll`
+    Body:
+        {
+            "question": String,
+            "options": [{"name": String, "count": Number}],
+            "speaker": "ObjectId"
+        }
+    Response: Created Object
+</details>
