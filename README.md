@@ -74,3 +74,34 @@ Common prefix: `/api/v1`
         }
     Response: Created Object
 </details>
+
+<details>
+    <summary>Vote a Poll</summary>
+	
+    Method: `PUT`
+    Path: `/poll/vote/:optionId`
+    Body:none
+    Response: 
+            {
+                "message": "Your Vote added!"
+            }
+</details>
+
+<details>
+    <summary>Poll results</summary>
+	
+    Method: `GET`
+    Path: `/poll/:pollId/results`
+    Body:none
+    Response: 
+            [
+                {
+                    "name": "Yes",
+                    "percentage": 40
+                },
+                {
+                    "name": "No",
+                    "percentage": 60
+                }
+            ]
+</details>
