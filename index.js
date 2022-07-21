@@ -8,6 +8,7 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 
 const authRoutes = require("./routes/auth");
+const pollRoutes = require("./routes/poll");
 
 // App initialization
 const app = express();
@@ -29,6 +30,7 @@ app.use(cors());
 app.use(cookieParser());
 
 app.use("/api/v1", authRoutes);
+app.use("/api/v1", pollRoutes);
 
 // Listning to port
 app.listen(PORT, () => {
