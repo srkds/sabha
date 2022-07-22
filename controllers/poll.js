@@ -10,6 +10,23 @@ exports.createPoll = (req, res) => {
   });
 };
 
+exports.getAllPollsByUserId = (req, res) => {
+  // console.log(req.auth);
+  // res.status(200);
+  Poll.find({ speaker: req.auth._id })
+    .select("question")
+    .exec((err, polls) => {
+      if (err) {
+        return res.status(400).json({ error: err.message });
+      }
+      res.json({ polls: polls });
+    });
+};
+
+exports.getPoll = (req, res) => {
+  res.json({ poll: req.poll });
+};
+
 exports.voteToPoll = (req, res) => {
   Poll.updateOne(
     { "options._id": req.optionId },

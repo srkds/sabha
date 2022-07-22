@@ -3,6 +3,8 @@ const {
   createPoll,
   voteToPoll,
   getPollResults,
+  getAllPollsByUserId,
+  getPoll,
 } = require("../controllers/poll");
 const { isSignedIn } = require("../middlewares/auth");
 const { setOptionId, getPollById } = require("../middlewares/poll");
@@ -14,6 +16,8 @@ router.param("pollId", getPollById);
 router.post("/poll", isSignedIn, createPoll);
 router.put("/poll/vote/:optionId", voteToPoll);
 
+router.get("/poll", isSignedIn, getAllPollsByUserId);
+router.get("/poll/:pollId", isSignedIn, getPoll);
 router.get("/poll/:pollId/results", getPollResults);
 
 module.exports = router;
