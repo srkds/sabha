@@ -23,6 +23,10 @@ exports.getAllPollsByUserId = (req, res) => {
     });
 };
 
+exports.getPoll = (req, res) => {
+  res.json({ poll: req.poll });
+};
+
 exports.voteToPoll = (req, res) => {
   Poll.updateOne(
     { "options._id": req.optionId },
