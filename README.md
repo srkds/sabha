@@ -105,3 +105,59 @@ Common prefix: `/api/v1`
                 }
             ]
 </details>
+
+<details>
+    <summary>Get all polls</summary>
+	
+    Method: `GET`
+    Path: `/poll`
+    Body:none
+    Response: 
+            {
+                "polls": [
+                    {
+                        "_id": "62d813f5eb197c1748165ed2",
+                        "question": "I know event loop in JS"
+                    },
+                    {
+                        "_id": "62d815f36daba3a347537d33",
+                        "question": "I know event loop in Coding"
+                    },
+                    {
+                        "_id": "62d816a43d05eb8a30d34805",
+                        "question": "I know event loop in Coding"
+                    }
+                ]
+            }
+</details>
+
+<details>
+    <summary>Get Single Poll</summary>
+	
+    Method: `GET`
+    Path: `/poll/:pollId`
+    Body:none
+    Response: 
+            {
+                "poll": {
+                    "_id": "62d813f5eb197c1748165ed2",
+                    "question": "I know event loop in JS",
+                    "options": [
+                        {
+                            "name": "Yes",
+                            "count": 2,
+                            "_id": "62d813f5eb197c1748165ed3"
+                        },
+                        {
+                            "name": "No",
+                            "count": 4,
+                            "_id": "62d813f5eb197c1748165ed4"
+                        }
+                    ],
+                    "speaker": "62d572900ebb75c297fb3682",
+                    "createdAt": "2022-07-20T14:40:53.910Z",
+                    "updatedAt": "2022-07-21T16:28:19.964Z",
+                    "__v": 0
+                }
+            }
+</details>
