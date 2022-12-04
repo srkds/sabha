@@ -1,5 +1,33 @@
 # Sabha - A community engagment platform
 
+# 💻 Installation
+
+Clone this project to your local pc.
+
+Run `npm install` to install required dependencies.
+
+In root directory create `.env` file and setup environment variables. Take help from `.env.example`
+
+Setup DB_URL `mongodb://localhost:27017/local_sabha_db_name`
+
+Run sabha project using `npm start`
+
+Make use of API doc to test all API endpoints.
+
+# 🎭 Actors
+
+👨‍🏫 **Speaker** Creates poll to know the opinions from an audience.
+
+    - Creates poll
+    - Shares poll link for votes to audience
+    - See all the polls they created.
+    - See individual poll details.
+    - And finally can get result of a poll.
+
+👨‍👦‍👦 **Audience** Gives a vote/opinion for poll given by speaker
+
+
+
 # API DOC
 
 Common prefix: `/api/v1`
