@@ -17,10 +17,11 @@ Make use of API doc to test all API endpoints.
 # 🎭 Actors
 
 👨‍🏫 **Speaker** Creates poll to know the opinions from an audience.
-    - creates poll
-    - shares poll link for votes to audience
-    - can see all the polls they created.
-    - can see individual poll details.
+
+    - Creates poll
+    - Shares poll link for votes to audience
+    - See all the polls they created.
+    - See individual poll details.
     - And finally can get result of a poll.
 
 👨‍👦‍👦 **Audience** Gives a vote/opinion for poll given by speaker
