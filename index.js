@@ -32,7 +32,13 @@ app.use(cookieParser());
 app.use("/api/v1", authRoutes);
 app.use("/api/v1", pollRoutes);
 
+app.get("/api/v1/ping", (req, res) => {
+  res.send({message: "Success"})
+})
+
 // Listning to port
 app.listen(PORT, () => {
   console.log(`Server is up and running on port ${PORT}`);
 });
+
+module.exports = app
