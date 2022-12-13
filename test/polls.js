@@ -42,5 +42,42 @@ describe("Polls", () => {
           done();
         });
     });
+    it("Signup with existing email", (done) => {
+      chai
+        .request(app)
+        .post("/api/v1/signup")
+        .send({
+          name: "Nirav",
+          email: "nirav@test3.com",
+          password: "123",
+          bio: "optional",
+        })
+        .end((err, res) => {
+          if (err) {
+            console.log(err);
+          }
+          res.should.have.status(400);
+          done();
+        });
+    });
   });
+
+  describe("Signin", ()=>{
+    it("Signin", (done)=>{
+      chai.request(app)
+      .post("/api/v1/signin")
+      .send({
+        email: "nirav@test3.com",
+        password: "123",
+      }).end((err, res) =>{
+        res.should.have.status(200)
+        let { _id, ...resBody } = res.body.user;
+          resBody.should.be.eql({
+                name: "Nirav",
+                email: "nirav@test3.com"
+        });
+          done();
+      })
+    })
+  })
 });
