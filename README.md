@@ -4,15 +4,29 @@
 
 Clone this project to your local pc.
 
-Run `npm install` to install required dependencies.
+Run below given command to install required dependencies.
+
+```sh
+npm install
+```
 
 In root directory create `.env` file and setup environment variables. Take help from `.env.example`
 
 Setup DB_URL `mongodb://localhost:27017/local_sabha_db_name`
 
-Run sabha project using `npm start`
+Run sabha project using 
+
+```sh
+npm start
+````
 
 Make use of API doc to test all API endpoints.
+
+# 🧪 Test
+We are using Chai and Mocha for testing the API. For running testcases use following command
+```sh
+npm test
+```
 
 # 🎭 Actors
 
@@ -28,7 +42,7 @@ Make use of API doc to test all API endpoints.
 
 
 
-# API DOC
+# ✍ API DOC
 
 Common prefix: `/api/v1`
 
