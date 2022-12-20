@@ -22,7 +22,8 @@ npm start
 
 Make use of API doc to test all API endpoints.
 
-🧪 For running testcases use following command
+# 🧪 Test
+We are using Chai and Mocha for testing the API. For running testcases use following command
 ```sh
 npm test
 ```
@@ -41,7 +42,7 @@ npm test
 
 
 
-# API DOC
+# ✍ API DOC
 
 Common prefix: `/api/v1`
 
